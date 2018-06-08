@@ -1,6 +1,6 @@
 <?php
 
-namespace common\traits\reflection;
+namespace demmonico\reflection;
 
 /**
  * Trait ConstantTrait
