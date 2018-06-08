@@ -1,22 +1,19 @@
 {
-    "name": "demmonico/yii2-traits",
-    "type": "yii2-extension",
-    "description": "Yii2 traits library",
-    "keywords": ["yii", "yii2", "trait", "extension", "component"],
-    "homepage": "https://github.com/demmonico/yii2-traits",
+    "name": "demmonico/reflection",
+    "type": "helper",
+    "description": "Helpers and traits for work with class reflections",
+    "keywords": ["reflection", "constant", "helper", "trait", "library", "extension", "component"],
+    "homepage": "https://github.com/demmonico/reflection",
     "license": "MIT",
     "authors": [
         {"name": "Dmitry demmonico", "email": "demmonico@gmail.com"}
     ],
     "require": {
-        "php": ">5.5.0",
-        "yiisoft/yii2": "~2.0.0",
-
-        "demmonico/yii2-helpers": "*"
+        "php": "~7.0"
     },
     "autoload": {
         "psr-4": {
-            "demmonico\\traits\\": "src"
+            "demmonico\\reflection\\": "src"
         }
     }
 }
