@@ -4,6 +4,11 @@
 
 Helpers and traits for work with class reflections
 
+[![Latest Stable Version](https://img.shields.io/packagist/v/demmonico/reflection.svg)](https://packagist.org/packages/demmonico/reflection)
+
+[![Total Downloads](https://img.shields.io/packagist/dt/demmonico/reflection.svg)](https://packagist.org/packages/demmonico/reflection)
+
+[![License](https://poser.pugx.org/demmonico/reflection/license)](https://packagist.org/packages/demmonico/reflection)
 
 
 ## Components
