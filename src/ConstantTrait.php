@@ -218,13 +218,15 @@ trait ConstantTrait
             $constArr = array_map(function ($value) use($constPrefix) {
                 // cut off prefix
                 $value = substr($value, strlen($constPrefix));
-                // transform to words
-                $value = trim(str_replace(['-', '_', '.', ], ' ', preg_replace('/(?<![A-Z])[A-Z]/', ' \0', $value)));
+                // transform to words by separators
+                $value = str_replace(['-', '_', '.', ], ' ', $value);
+                // transform to words by camelCase
+                $value = preg_replace('/(?<![A-Z\s])[A-Z]/', ' \0', $value);
                 // ucwords only if all letters are uppercased
                 if (preg_match('/^([A-Z\s])*$/', $value)) {
                     $value = ucwords( strtolower($value) );
                 }
-                return $value;
+                return trim($value);
             }, array_flip($constArr));
 
             // try to get overwritten labels
